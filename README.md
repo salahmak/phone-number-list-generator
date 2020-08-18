@@ -16,18 +16,18 @@
 npm install phones-generator.js -g
 ```
 
-## :rocket: Usage
-
-```
-phones-generator.js --seed [seed] --length [length] --write [writing file dir] (optional)
-```
-
 or you can clone this repo and install locally:
 
 ```
 git clone https://github.com/salahmak/phone-number-list-generator.git
 cd phone-number-list-generator
 npm install
+```
+
+## :rocket: Usage
+
+```
+phones-generator.js --seed [seed] --length [length] --write [writing file dir] (optional)
 ```
 
 usage locally:
