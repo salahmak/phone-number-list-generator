@@ -1,6 +1,6 @@
 {
   "name": "phones-generator.js",
-  "version": "0.3.0",
+  "version": "0.9.0",
   "description": "just a script to generate all possible phone numbers with a seed and a length",
   "main": "index.js",
   "scripts": {

@@ -1,4 +1,4 @@
-# numberGenerator ![language](https://img.shields.io/badge/language-javascript-blue.svg)
+# phone-number-list-generator ![language](https://img.shields.io/badge/language-javascript-blue.svg)
 
 > A simple tool to generate phone numbers lists by providing a seed (first common 3-4 numbers without 0) and a length (the length of the number without the provided seed).
 
