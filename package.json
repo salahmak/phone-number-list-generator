@@ -2,7 +2,7 @@
   "name": "number-generator",
   "version": "1.0.0",
   "description": "just a script to generate all possible phone numbers with a seed and a length",
-  "main": "index.js",
+  "main": "generateNumbers.js",
   "scripts": {
     "test": "node index.js"
   },
