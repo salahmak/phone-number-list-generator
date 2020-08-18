@@ -62,7 +62,6 @@ Options:
 
 ```
 
-
 ## :scroll: License
 
 [MIT](LICENSE) © [salahmak](https://github.com/salahmak)
