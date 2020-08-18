@@ -4,11 +4,11 @@
 
 ## :books: Table of Contents
 
-- [Installation](#package-installation)
-- [Usage](#rocket-usage)
-- [Example](#helicopter-example)
-- [Help](#bulb-help)
-- [License](#scroll-license)
+-   [Installation](#package-installation)
+-   [Usage](#rocket-usage)
+-   [Example](#helicopter-example)
+-   [Help](#bulb-help)
+-   [License](#scroll-license)
 
 ## :package: Installation
 
@@ -19,17 +19,22 @@ npm install
 ## :rocket: Usage
 
 ```
-node generateNumbers.js --seed [seed] --length [length]
+node generateNumbers.js --seed [seed] --length [length] --write [writing file dir] (optional)
 ```
 
 ## :helicopter: Example
+
 ### Generating all numbers that looks like `0455xxxxxx`
+
 In the current example, `0455` is the seed, and the number of x is the length, so the length is 6. We can generate the numbers using this command:
 
 ```
-node generateNumbers.js --seed 0455 --length 6
+node generateNumbers.js --seed 0455 --length 6 --write 'phoneNumbers.txt'
 ```
-After generating the numbers, the list will be stored at /lists in this format:
+
+note: if you don't specify the writing file (--write, -w), the tools will automatically write the file in the execution directory.
+
+After generating the numbers, the list will be stored on phoneNumber.txt in this format:
 
 ```
 0455000000
@@ -58,6 +63,8 @@ Options:
                 between), mostly first 3 numbers without the 0          [number]
   --length, -l  Insert the length of the number excluding the seed's length
                                                                         [number]
+  --write, -w   Provide the filename where the numbers will be written at (the
+                directory has to be valid)                              [string]
   --help, -h    Show help                                              [boolean]
 
 ```

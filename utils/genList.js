@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = async (seed, length, wPath) => {
     //defining the filepath
-    const filePath = path.join(wPath);
+    const filePath = path.join(path.normalize(wPath));
 
     //setting up the phone array
     let phoneArr = ["0", ...seed.toString()];
