@@ -30,10 +30,10 @@ if (!argv.seed) return console.log("Please provide the seed of the number");
 
 if (!argv.length) return console.log("Please provide the length of the number");
 
-let path = `${__dirname}/0${argv.seed}xxxx-${argv.length}.txt`;
+let path = `${process.cwd()}/0${argv.seed}xxxx-${argv.length}.txt`;
 
 if (argv.write) {
-    path = `${__dirname}/${argv.write}`;
+    path = `${process.cwd()}/${argv.write}`;
 }
 
 generate(argv.seed, argv.length, path);
