@@ -1,0 +1,23 @@
+{
+  "name": "number-generator",
+  "version": "1.0.0",
+  "description": "just a script to generate all possible phone numbers with a seed and a length",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Salah Makdour",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salahmak/phone-number-list-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/salahmak/phone-number-list-generator/issues"
+  },
+  "homepage": "https://github.com/salahmak/phone-number-list-generator#readme"
+}
