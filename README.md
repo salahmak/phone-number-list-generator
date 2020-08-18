@@ -13,13 +13,27 @@
 ## :package: Installation
 
 ```
-npm install
+npm install phones-generator.js -g
 ```
 
 ## :rocket: Usage
 
 ```
-node generateNumbers.js --seed [seed] --length [length] --write [writing file dir] (optional)
+phones-generator.js --seed [seed] --length [length] --write [writing file dir] (optional)
+```
+
+or you can clone this repo and install locally:
+
+```
+git clone https://github.com/salahmak/phone-number-list-generator.git
+cd phone-number-list-generator
+npm install
+```
+
+usage locally:
+
+```
+node index.js --seed [seed] --length [length] --write [writing file dir] (optional)
 ```
 
 ## :helicopter: Example
@@ -29,7 +43,7 @@ node generateNumbers.js --seed [seed] --length [length] --write [writing file di
 In the current example, `0455` is the seed, and the number of x is the length, so the length is 6. We can generate the numbers using this command:
 
 ```
-node generateNumbers.js --seed 0455 --length 6 --write 'phoneNumbers.txt'
+phones-generator.js --seed 0455 --length 6 --write 'phoneNumbers.txt'
 ```
 
 note: if you don't specify the writing file (--write, -w), the tools will automatically write the file in the execution directory.

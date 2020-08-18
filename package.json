@@ -1,8 +1,8 @@
 {
-  "name": "phone-number-generator.js",
-  "version": "1.0.0",
+  "name": "phones-generator.js",
+  "version": "0.3.0",
   "description": "just a script to generate all possible phone numbers with a seed and a length",
-  "main": "generatePhoneNumbers.js",
+  "main": "index.js",
   "scripts": {
     "test": "node index.js"
   },
@@ -11,9 +11,9 @@
   "dependencies": {
     "yargs": "^15.4.1"
   },
-  "main": "generatePhoneNumbers.js",
+  "main": "index.js",
   "preferGlobal": true,
-  "bin": "generatePhoneNumbers.js",
+  "bin": "index.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
