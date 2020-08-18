@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-module.exports = async (seed, length) => {
+module.exports = async (seed, length, wPath) => {
     //defining the filepath
-    const filePath = path.join(__dirname, "..", "lists", `0${seed}xxxx.txt`);
+    const filePath = path.join(wPath);
 
     //setting up the phone array
     let phoneArr = ["0", ...seed.toString()];

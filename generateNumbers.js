@@ -13,6 +13,12 @@ const argv = yargs
         description: "Insert the length of the number excluding the seed's length",
         type: "number",
     })
+    .option("write", {
+        alias: "w",
+        description:
+            "Provide the filename where the numbers will be written at (the directory has to be valid)",
+        type: "string",
+    })
     .help()
     .alias("help", "h").argv;
 
@@ -23,4 +29,10 @@ if (!argv.seed) return console.log("Please provide the seed of the number");
 
 if (!argv.length) return console.log("Please provide the length of the number");
 
-generate(argv.seed, argv.length);
+let path = `${__dirname}/0${argv.seed}xxxx-${argv.length}.txt`;
+
+if (argv.write) {
+    path = `${__dirname}/${argv.write}`;
+}
+
+generate(argv.seed, argv.length, path);
