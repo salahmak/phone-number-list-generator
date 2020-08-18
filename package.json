@@ -11,6 +11,9 @@
   "dependencies": {
     "yargs": "^15.4.1"
   },
+  "main": "generatePhoneNumbers.js",
+  "preferGlobal": true,
+  "bin": "generatePhoneNumbers.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
